@@ -50,25 +50,25 @@
     <p class="middle-text">Request for access</p>
   </div>
 
-  <form id="first-form" action="request-page.html" method="post">
+  <form id="first-form" action="request-page.html" method="get">
     <div class="first-box">
         <label id="name-box">Name</label>
-        <input class="fullname-box" type="text" name="Name" id="nameID" value="" placeholder="Full Name" required>
+        <input class="fullname-box" type="text" name="Name" id="nameID" placeholder="Full Name" required>
     </div>
     <div class="middle-box">
         <label class="email-box">Email Id</label>
-        <input class="emailid-box" type="email" name="Email" id="emailID" value="" placeholder="@hdfc.com" required>
+        <input class="emailid-box" type="email" name="Email" id="emailID" placeholder="@hdfc.com" required>
     </div>
     <div class="bottom-box">
         <label class="request-box">Reason for request</label>
-        <input class="reason-box" type="text" name="reason" value="" placeholder="Brief your requirements & Approval.." required>
+        <input class="reason-box" type="text" name="reason" placeholder="Brief your requirements & Approval.." required>
     </div>
     <div class="checkbox-text">
       <label class="checkbox-side-text">Send me a email copy</label>
       <input class="for-checkbox-email" type="checkbox" name="copyEmail" value="">
     </div>
     <div class="submit-button">
-        <button class="sub-button" type="submit" name="button">Submit</button>
+        <button class="sub-button" type="submit" name="button" onclick="getname()">Submit</button>
     </div>
   </form>
 
@@ -81,5 +81,6 @@
   </footer>
 </div>
 <script src="index.js" charset="utf-8"></script>
+
 </body>
 </html>

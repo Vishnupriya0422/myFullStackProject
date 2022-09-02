@@ -42,21 +42,21 @@
     <p class="top-text">AI powered personalization engine dedicated to understanding human tastes</p>
   </div>
 
-  <form class="login-form" action="login-redirect-page.html" method="post">
+  <form class="login-form" action="login-redirect-page.html" method="post" onsubmit="return login_password(this)">
     <div class="first-box">
         <label class="login-box">Login</label>
         <input class="mail-box" type="email" name="email" id="emailID" value="" placeholder="Email Id" required>
     </div>
     <div class="middle-box">
         <label class="pwd-box">Password</label>
-        <input class="pass-box" type="password" name="password" value="" placeholder="Credentials" required pattern="(?=.*[A-Z]).{5,}" title="Must contain at least one uppercase and at least 5 or more characters">
+        <input id="login_pass" class="pass-box" type="password" name="password" value="" placeholder="Credentials" required pattern="(?=.*[A-Z]).{5,}" title="Must contain at least one uppercase and at least 5 or more characters"  onkeyup="login_password();">
     </div>
     <div class="checkbox-text">
       <label class="checkbox-remember-text">Remember me</label>
       <input class="for-checkbox-remember" type="checkbox" name="remember" value="">
     </div>
     <div class="signin-button">
-        <button class="sign-button" type="submit" name="button">Sign in</button>
+        <button class="sign-button" type="submit" name="button" onclick="login_password()">Sign in</button>
     </div>
   </form>
 
@@ -72,5 +72,6 @@
     <img class="copyright" src="images/copyright.png" alt="copyright-pic">
     <p class="footer-text">2020 All Rights Reserved by Crayon Data Pte Ltd and it’s registered trademark maya.ai</p>
   </footer>
+  <script src="index.js" charset="utf-8"></script>
   </body>
   </html>

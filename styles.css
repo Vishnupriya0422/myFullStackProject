@@ -124,6 +124,10 @@ color: #575E6B;
 
 }
 
+#nameMessage, #emailMessage{
+  font-weight: bold;
+}
+
 input:focus{
   outline: none;
 }
@@ -599,7 +603,7 @@ color: #1C2C42;
   color: black;
 }
 
-.thanks-signin{
+.thanks-signin, #thanking{
   text-align: center;
   color: #54BAB9;
   font-family: 'Metropolis';
